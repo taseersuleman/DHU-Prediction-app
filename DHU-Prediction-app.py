@@ -18,6 +18,11 @@ st.subheader("Predictor for Dihydrouridine prediction in tRNA sequences")
 image = Image.open('Nucleotide_TRNA.png')
 st.image(image)
 
+str22 = "GGUUUCCGUAGUGUAGUGGUUAUCACGUUCGCCUCACACGC"
+if st.button('Example'):
+    st.write(str22)
+
+
 def seqToMat(seq):
     encoder = ['a', 'c', 'u', 'g']
 
