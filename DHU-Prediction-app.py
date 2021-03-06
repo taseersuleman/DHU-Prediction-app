@@ -12,7 +12,7 @@ st.title(
                DHU-Pred - Predictor for Dihydrouridine Sites in tRNA Sequences
 """
 )
-st.subheader("""The tRNAmod is a web-server for the prediction of Dihydrouridine in transfer RNA (tRNA) modifications.
+st.subheader("""The DHU-Pred is a web-server for the prediction of Dihydrouridine in transfer RNA (tRNA) modifications.
 Dihydrouridine is formed from the uridine base by reducing the carbon-carbon double bond at positions 5 and 6 as shown in the Figure below. 
 The current research study focused on the detection of D modification using a novel method for feature extraction from the RNA samples obtained from RMBase
 containing 1035 Positive Samples from three species including Homosapiens (525) , Mus musculus (435), and Saccharomyces Cerevisiae (75) and 1396 Negative Samples.
