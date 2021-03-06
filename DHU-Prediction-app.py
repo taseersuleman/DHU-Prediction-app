@@ -9,16 +9,21 @@ from sklearn.preprocessing import StandardScaler
 
 st.title(
     """
-               DHU-Pred
+               DHU-Pred - Predictor for Dihydrouridine Sites in tRNA Sequences
 """
 )
-st.subheader("Predictor for Dihydrouridine prediction in tRNA sequences")
+st.subheader("The tRNAmod is a web-server for the prediction of Dihydrouridine in transfer RNA (tRNA) modifications." 
+             "Dihydrouridine is formed from the uridine base by reducing the carbon-carbon double bond at positions 5 and 6 as shown in Figure below."
+            "The current research study focused on the detection of D modification using a novel method for feature extraction from the RNA samples obtained from
+             "containing 1035 Positive Samples form three species including Homosapiens (525) , Mus musculus (435), and Saccharomyces Cerevisiae (75) and 1396 Negative Samples "
+             "Statistical moments are incorporated for the extraction and representation of feature vectors based on the position as well as the composition of nucleotide bases.")
 
 #---------------------------------#
 image = Image.open('Nucleotide_TRNA.png')
 st.image(image)
 
 str22 = "GGUUUCCGUAGUGUAGUGGUUAUCACGUUCGCCUCACACGC"
+st.subheader("Kindly click the EXAMPLE button for sample RNA sequence")
 if st.button('Example'):
     st.write(str22)
 
