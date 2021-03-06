@@ -12,11 +12,11 @@ st.title(
                DHU-Pred - Predictor for Dihydrouridine Sites in tRNA Sequences
 """
 )
-st.subheader("The tRNAmod is a web-server for the prediction of Dihydrouridine in transfer RNA (tRNA) modifications." 
-             "Dihydrouridine is formed from the uridine base by reducing the carbon-carbon double bond at positions 5 and 6 as shown in Figure below."
-            "The current research study focused on the detection of D modification using a novel method for feature extraction from the RNA samples obtained from"
-             "containing 1035 Positive Samples form three species including Homosapiens (525) , Mus musculus (435), and Saccharomyces Cerevisiae (75) and 1396 Negative Samples"
-             "Statistical moments are incorporated for the extraction and representation of feature vectors based on the position as well as the composition of nucleotide bases.")
+st.subheader("The tRNAmod is a web-server for the prediction of Dihydrouridine in transfer RNA (tRNA) modifications." )
+st.subheader("Dihydrouridine is formed from the uridine base by reducing the carbon-carbon double bond at positions 5 and 6 as shown in Figure below.")
+st.subheader("The current research study focused on the detection of D modification using a novel method for feature extraction from the RNA samples obtained from")
+st.subheader("containing 1035 Positive Samples form three species including Homosapiens (525) , Mus musculus (435), and Saccharomyces Cerevisiae (75) and 1396 Negative Samples")
+st.subheader("Statistical moments are incorporated for the extraction and representation of feature vectors based on the position as well as the composition of nucleotide bases.")
 
 #---------------------------------#
 image = Image.open('Nucleotide_TRNA.png')
