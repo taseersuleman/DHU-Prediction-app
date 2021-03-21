@@ -1,4 +1,5 @@
 import numpy as np
+import pandas as pd
 import streamlit as st
 from Bio import SeqIO
 import math
@@ -793,9 +794,12 @@ def input_seq():
         np.random.seed(5)
         inputSize = 522
         outputcol = inputSize + 1
-        dataset = np.genfromtxt("IISequence_FVs_for_test.csv", delimiter=",", dtype=float)
-        W = dataset[:, 0:inputSize]
-        Y = dataset[:, -1]
+        #dataset = np.genfromtxt("IISequence_FVs_for_test.csv", delimiter=",", dtype=float)
+        df = pd.read_csv("IISequence_FVs_for_test.csv", sep=',', header=None)
+        W = df.iloc[:, :].values
+        Y = df.iloc[:, -1].values
+        #W = dataset[:, 0:inputSize]
+        #Y = dataset[:, -1]
         std_scale = StandardScaler().fit(W)
         W = std_scale.transform(W)
         load_model = pickle.load(open('Dhupred-RF.pkl', 'rb'))
